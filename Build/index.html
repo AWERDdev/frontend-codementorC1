@@ -7,33 +7,76 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../src/assets/images/favicon-32x32.png">
  <link rel="stylesheet" href="../src/styles/styling.css">
  <link rel="stylesheet" href="../src/styles/FormBox.css">
-
+<link rel="stylesheet" href="../src/styles/InputStyling.css">
+<link rel="stylesheet" href="../src/styles/buttonStyling.css">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Contact form</title>
-
+<style>
+  .notwanted{
+    color: white;
+  }
+</style>
 
 </head>
 <body>
+  <form action="#">
 <div class="Form-box">
   <h1>Contact US</h1>
   <div class="form-container">
 <div class="row">
   <div class="sec">
     <label for="First-Name">First Name</label>
-  <input type="text" class="input" id="First-Name">
+  <input type="text" class="input" id="First-Name"required>
 </div>
 <div class="sec">
   <label for="last-Name">last Name</label>
-<input type="text" class="input" id="last-Name">
+<input type="text" class="input" id="last-Name"required>
+</div>
+</div>
+<div class="row">
+  <div class="sec">
+    <label for="Email">Email</label>
+  <input type="email" class="Email-input"id="Email"required>
+</div>
+</div>
+<div class="Radiorow">
+  <label class="label">Query Type</label>
+  <div class="radiosec">
+    <label for="radio1">
+    <div class="RadioDiv">
+      <input type="radio"name="a"id="radio1"class="radio">
+      <label for="radio1"class="radioLabel">General Enquiry</label>
+    </div>  
+  </label>
+  <label for="radio2">
+  <div class="RadioDiv">
+  <input type="radio"name="a"id="radio2"class="radio">
+  <label for="radio2"class="radioLabel">Support Request</label>
+</div>
+</label>  
+</div>
+</div>
+<div class="row">
+  <div class="sec">
+    <label for="Message">Message</label>
+    <textarea class="Message-input"id="Message"required></textarea>
+</div>
+</div>
+<div class="checkrow">
+  <input type="checkbox" class="Check-box"id="Check-box"required>
+  <label for="Check-box"class="labelcheckbox">I consent to being contacted by the team</label>
+</div>
+<div class="BTN-container">
+  <button class="submit-Btn" id="submit-btn">Submit</button>
 </div>
 
-</div>
+
+
+
   </div>
-
 </div>
-
-
+</form>
 </body>
 </html>

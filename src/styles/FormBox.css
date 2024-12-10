@@ -1,11 +1,138 @@
+/** form box  */
 .Form-box{
-    margin-top:5rem ;
+    margin-top:3rem ;
     background-color: white;
     width: 50vw;
-    height: 70vh;
+    height: 86vh;
     border-radius: 0.5rem;
+}
+.form-container{
+    display: grid;
+    gap: 2vw;
+    margin-top:2rem ;
+    
 }
 .Form-box h1{
    margin-left:1rem ;
    margin-top:1rem ;
+}
+.sec{
+    display: grid;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    gap: 4vw;
+
+}
+
+.Radiorow{
+    display: grid;
+}
+
+.Radiorow .label{
+    margin-left:3rem ;
+}
+.radiosec{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    gap: 4vw;
+
+}
+.RadioDiv{
+appearance: none;   
+display: flex;  
+width: 20vw;
+height: 5vh;
+border: 1.9px solid hsl(0, 0%, 53%);
+border-radius: 0.3rem;
+margin-top:0.5rem ;
+
+}
+.radioLabel{
+margin-top:0.5rem;
+margin-left: 1rem;
+}
+.checkrow{
+    margin-left: 2.5rem;
+    display: flex;
+ justify-content: flex-start;   
+}
+.labelcheckbox{
+    margin-left:1rem ;
+}
+.RadioDiv:active{
+    appearance: none;
+    border: 1.9px solid hsl(120, 100%, 40%); 
+    
+    }
+
+
+
+
+
+
+
+
+
+@media(max-width:500px){
+    /** form box  */
+.Form-box{
+    margin-top:3rem ;
+    background-color: white;
+    width: 90vw;
+    height: 90vh;
+    border-radius: 0.5rem;
+}
+.form-container{
+    display: grid;
+    gap: 2vw;
+    margin-top:2rem ;
+    
+}
+.Form-box h1{
+   margin-left:1rem ;
+   margin-top:1rem ;
+}
+.sec{
+    display: grid;
+}
+.row{
+    display: grid;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    gap: 4vw;
+
+}
+
+.Radiorow{
+    display: grid;
+}
+
+.Radiorow .label{
+    margin-left:3rem ;
+}
+.radiosec{
+    display:grid;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    gap: 4vw;
+
+}
+.RadioDiv{
+    display: flex;  
+    width: 70vw;
+    height: 5vh;
+    border: 1.9px solid hsl(0, 0%, 53%);
+    border-radius: 0.3rem;
+    margin-top:0.5rem ;
+    
+    }
+
 }

@@ -1,0 +1,90 @@
+input{
+width: 20vw;
+height: 5vh;
+border-radius: 0.3rem;
+border: 1.9px solid hsl(0, 0%, 53%);
+}
+.Email-input{
+    width: 45vw;
+    height: 5vh;
+    border-radius: 0.3rem;
+    border: 1.9px solid hsl(0, 0%, 53%);
+}
+.radio{
+
+width:30px;
+height: 20px;
+margin-top:0.5rem ;
+margin-left: 1rem;
+}
+.Message-input{
+    width: 45vw;
+    height: 15vh;
+    border-radius: 0.3rem;
+    border: 1.9px solid hsl(0, 0%, 53%);
+    resize: none;
+
+}
+
+.Check-box{ 
+
+    width:30px;
+    height: 20px;
+}
+.Email-input:invalid:focus {
+    border: 1.9px solid hsl(0, 100%, 60%);
+  }  
+  .Email-input:valid {
+    border: 1.9px solid hsl(120, 100%, 40%); 
+  }
+  input:focus{
+    border: 1.9px solid hsl(120, 100%, 40%); 
+    }
+
+    .radio:active{
+        border: 1.9px solid hsl(120, 100%, 40%); 
+        }
+        .Message-input:focus{
+            border: 1.9px solid hsl(120, 100%, 40%); 
+        }
+        
+.Check-box:checked{
+    border: 1.9px solid hsl(120, 100%, 40%); 
+}
+
+
+
+
+
+
+  .invalid{
+    border: 1.9px solid hsl(0, 100%, 60%);
+  }
+  .valid{
+    border: 1.9px solid hsl(120, 100%, 40%);
+  }
+
+@media(max-width:500px){
+    input{
+        width: 70vw;
+        height: 5vh;
+ 
+        }
+        .Email-input{
+            width: 70vw;
+            height: 5vh;
+   
+        }
+        .radio{
+        width:30px;
+        height: 20px;
+
+        }
+        .Message-input{
+            width: 70vw;
+            height: 15vh;
+        
+        
+        }
+
+}
