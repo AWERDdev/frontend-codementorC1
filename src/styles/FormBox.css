@@ -1,0 +1,11 @@
+.Form-box{
+    margin-top:5rem ;
+    background-color: white;
+    width: 50vw;
+    height: 70vh;
+    border-radius: 0.5rem;
+}
+.Form-box h1{
+   margin-left:1rem ;
+   margin-top:1rem ;
+}
