@@ -49,7 +49,7 @@ const Message = document.getElementById('Message').value
 
 
     if(!First_Name){
-    console.log('This is required')
+    // console.log('This is required')
     Warning_error_firstNameLabel.textContent="This is Required "
     First_Name_bar.classList.add(invalid);
 }else{
@@ -60,7 +60,7 @@ const Message = document.getElementById('Message').value
 
 
 if(!last_Name){
-    console.log('This is required')
+    // console.log('This is required')
     Warning_error_lastNameLabel.textContent="This is Required "
     last_Name_bar.classList.add(invalid);
 }else{
@@ -71,7 +71,7 @@ if(!last_Name){
 
 
 if(!Message){
-    console.log('This is required')
+    // console.log('This is required')
 
     Warning_error_Message_inputLabel.textContent="This is Required";
     Message_bar.classList.add(invalid);
@@ -84,16 +84,16 @@ if(!Message){
 
 
 if(!Email){
-    console.log('This is required')
+    // console.log('This is required')
     Warning_errorEmail.textContent="This is Required "
     Email_bar.classList.add(invalid)
    }
    if(validateEmail(Email)){
-    console.log('valid email');
+    // console.log('valid email');
     Email_bar.classList.add(valid)
        Warning_errorEmail.textContent = ''
    }else{
-    console.log('invalid email')
+    // console.log('invalid email')
     Warning_errorEmail.textContent = 'Please Enter a valid Email'
     Email_bar.classList.add(invalid)
    }
@@ -105,19 +105,19 @@ for(let i = 0; i<RadioBtns.length;i++){
     }
 }
 if(!isSelected){
-console.log('Please select a query type');
+// console.log('Please select a query type');
 Warning_errorRadioLabel.textContent = 'Please select a query type';
 }
 else{
-    console.log('thanks for selecting')
+    // console.log('thanks for selecting')
     Warning_errorRadioLabel.textContent = '';
 }
 if(Check_box.checked){
-    console.log('Thanks for selecting');
+    // console.log('Thanks for selecting');
        Warning_error_checkboxLabel.textContent=""
     Check_box.classList.add(valid)
 }else{
-    console.log('To submit the form you must consent to being contacted');
+    // console.log('To submit the form you must consent to being contacted');
     Warning_error_checkboxLabel.textContent="To submit the form you must consent to being contacted"
     Check_box.classList.add(invalid)
 
@@ -128,7 +128,7 @@ if(Check_box.checked){
     Message_box.classList.add(visibleposition);
  
 }else{
-    console.log('please finsh the form')
+    // console.log('please finsh the form')
 }
 
 })
