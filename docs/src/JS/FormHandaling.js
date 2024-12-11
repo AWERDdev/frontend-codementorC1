@@ -120,9 +120,15 @@ if(Check_box.checked){
     console.log('To submit the form you must consent to being contacted');
     Warning_error_checkboxLabel.textContent="To submit the form you must consent to being contacted"
     Check_box.classList.add(invalid)
-}
+
+
+}if(First_Name && Message && validateEmail(Email) &&isSelected&&last_Name && Check_box.checked){
+
     Message_box.classList.remove(defaultPosation);
     Message_box.classList.add(visibleposition);
  
+}else{
+    console.log('please finsh the form')
+}
 
 })
