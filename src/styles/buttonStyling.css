@@ -1,0 +1,21 @@
+.BTN-container{
+    display: flex;
+    justify-content: center;
+}
+button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 0.3rem;
+    width: 45vw;
+    cursor: pointer;
+    background-color: hsl(155, 100%, 30%);
+    color: white;
+    height: 7vh;
+    font-size: 1.5rem;
+}
+button:hover{
+    background-color: hsl(155, 100%, 20%);
+    
+}

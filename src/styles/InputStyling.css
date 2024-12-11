@@ -11,7 +11,6 @@ border: 1.9px solid hsl(0, 0%, 53%);
     border: 1.9px solid hsl(0, 0%, 53%);
 }
 .radio{
-
 width:30px;
 height: 20px;
 margin-top:0.5rem ;
@@ -25,7 +24,10 @@ margin-left: 1rem;
     resize: none;
 
 }
-
+input:focus{
+  border: none;
+  outline: none;
+}
 .Check-box{ 
 
     width:30px;
@@ -37,17 +39,29 @@ margin-left: 1rem;
   .Email-input:valid {
     border: 1.9px solid hsl(120, 100%, 40%); 
   }
-  input:focus{
+  input:invalid:focus{
     border: 1.9px solid hsl(120, 100%, 40%); 
     }
-
+    .input:valid {
+      border: 1.9px solid hsl(120, 100%, 40%); 
+    }
     .radio:active{
         border: 1.9px solid hsl(120, 100%, 40%); 
         }
-        .Message-input:focus{
+        .Message-input:invalid:focus{
+          border: none;
+          outline: none;
             border: 1.9px solid hsl(120, 100%, 40%); 
         }
-        
+     input:hover{
+      border: 1.9px solid hsl(120, 100%, 40%); 
+     }
+     .Message-input:hover{
+      border: 1.9px solid hsl(120, 100%, 40%); 
+     }
+  .Message-input:valid {
+    border: 1.9px solid hsl(120, 100%, 40%); 
+  }   
 .Check-box:checked{
     border: 1.9px solid hsl(120, 100%, 40%); 
 }

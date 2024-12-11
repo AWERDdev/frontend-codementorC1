@@ -65,14 +65,19 @@ margin-left: 1rem;
 .labelcheckbox{
     margin-left:1rem ;
 }
-.RadioDiv:active{
-    appearance: none;
-    border: 1.9px solid hsl(120, 100%, 40%); 
-    
-    }
 
-
-
+/* Style the container (RadioDiv) when the radio input inside it is checked */
+.RadioDiv:has(input[type="radio"]:checked) {
+    border: 2px solid hsl(120, 100%, 60%); /* Green border */
+    background-color: hsl(120, 100%, 95%);
+    transition: border 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Optional: Add active state */
+  .RadioDiv:active {
+    border: 1.9px solid hsl(120, 100%, 60%);
+  }
+  
 
 
 
