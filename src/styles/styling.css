@@ -12,3 +12,9 @@ body{
     justify-content: center;
     background-color: hsl(120, 17%, 83%);
 }
+svg{
+width:2vw;
+height: auto;
+min-width: 20px;
+fill: #FBFCFC;
+}

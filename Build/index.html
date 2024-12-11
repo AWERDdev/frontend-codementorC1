@@ -5,40 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="../src/assets/images/favicon-32x32.png">
+<!--* custom CSS  -->
  <link rel="stylesheet" href="../src/styles/styling.css">
  <link rel="stylesheet" href="../src/styles/FormBox.css">
 <link rel="stylesheet" href="../src/styles/InputStyling.css">
 <link rel="stylesheet" href="../src/styles/buttonStyling.css">
+<link rel="stylesheet" href="../src/styles/MessageBox.css">
+<!--* google font  -->
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Contact form</title>
 <style>
-  .notwanted{
-    color: white;
+  .Warning-error{
+    color: red;
+
+  }
+  .Warning-errorRadio{
+    color: red;
+    margin-left: 2.5rem;
+  }
+  .Warning-errorEmail{
+    color: red;
   }
 </style>
-
 </head>
 <body>
-  <form action="#">
+<!--* Message square  -->
+<div class="Message-box">
+  <div class="Message-container">
+    <h1>
+      <svg class="svg"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"/></svg>
+      Message Sent!
+    </h1>
+    <p>Thanks for completing the Form we will be in touch soon</p>
+  </div>
+</div>
+
+
+
+
+
+
+  <!--* HTML Form  -->
+  <form action="#"id="form">
 <div class="Form-box">
   <h1>Contact US</h1>
   <div class="form-container">
 <div class="row">
   <div class="sec">
     <label for="First-Name">First Name</label>
-  <input type="text" class="input" id="First-Name"required>
+  <input type="text" class="input" id="First-Name">
+  <label class="Warning-error"id="Warning-error-firstName"></label>
 </div>
 <div class="sec">
   <label for="last-Name">last Name</label>
-<input type="text" class="input" id="last-Name"required>
+<input type="text" class="input" id="last-Name">
+<label class="Warning-error"id="Warning-error-lastName"></label>
 </div>
 </div>
 <div class="row">
   <div class="sec">
     <label for="Email">Email</label>
-  <input type="email" class="Email-input"id="Email"required>
+  <input type="text" class="Email-input"id="Email">
+  <label class="Warning-errorEmail"></label>
 </div>
 </div>
 <div class="Radiorow">
@@ -48,25 +78,31 @@
     <div class="RadioDiv">
       <input type="radio"name="a"id="radio1"class="radio">
       <label for="radio1"class="radioLabel">General Enquiry</label>
-    </div>  
+    </div>   
   </label>
   <label for="radio2">
   <div class="RadioDiv">
   <input type="radio"name="a"id="radio2"class="radio">
   <label for="radio2"class="radioLabel">Support Request</label>
 </div>
-</label>  
+</label>
+
 </div>
+<label class="Warning-errorRadio"></label>  
 </div>
 <div class="row">
   <div class="sec">
     <label for="Message">Message</label>
-    <textarea class="Message-input"id="Message"required></textarea>
+    <textarea class="Message-input"id="Message"></textarea>
+    <label class="Warning-error"id="Warning-error-Message-input"></label>
 </div>
 </div>
 <div class="checkrow">
-  <input type="checkbox" class="Check-box"id="Check-box"required>
-  <label for="Check-box"class="labelcheckbox">I consent to being contacted by the team</label>
+  <div class="checkbox-container"> 
+    <input type="checkbox" class="Check-box"id="Check-box">
+    <label for="Check-box"class="labelcheckbox">I consent to being contacted by the team</label>
+   </div>
+  <label class="Warning-error"id="Warning-error-checkbox"></label>
 </div>
 <div class="BTN-container">
   <button class="submit-Btn" id="submit-btn">Submit</button>
@@ -75,8 +111,11 @@
 
 
 
+
   </div>
 </div>
 </form>
+<script src="../src/JS/FormHandaling.js"></script>
+<script src="https://kit.fontawesome.com/adf4462067.js" crossorigin="anonymous"></script>
 </body>
 </html>

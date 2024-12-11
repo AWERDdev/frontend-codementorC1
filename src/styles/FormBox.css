@@ -3,7 +3,7 @@
     margin-top:3rem ;
     background-color: white;
     width: 50vw;
-    height: 86vh;
+    height: 90vh;
     border-radius: 0.5rem;
 }
 .form-container{
@@ -59,7 +59,7 @@ margin-left: 1rem;
 }
 .checkrow{
     margin-left: 2.5rem;
-    display: flex;
+    display: grid;
  justify-content: flex-start;   
 }
 .labelcheckbox{
@@ -77,20 +77,23 @@ margin-left: 1rem;
   .RadioDiv:active {
     border: 1.9px solid hsl(120, 100%, 60%);
   }
-  
+ .checkbox-container{
+    display: flex;
+ } 
 
 
 
 
 
-
-@media(max-width:500px){
+  /** responsive  */
+@media(max-width:600px){
     /** form box  */
 .Form-box{
     margin-top:3rem ;
     background-color: white;
     width: 90vw;
-    height: 90vh;
+    height: auto; 
+    /* height: auto;*/
     border-radius: 0.5rem;
 }
 .form-container{
@@ -139,5 +142,21 @@ margin-left: 1rem;
     margin-top:0.5rem ;
     
     }
+    
 
 }
+    
+
+/* @media(min-width:615px){
+   
+.Form-box{
+    margin-top:3rem ;
+    background-color: white;
+    width: 70vw;
+    height: 75vh; 
+
+    border-radius: 0.5rem;
+}
+
+}
+ */

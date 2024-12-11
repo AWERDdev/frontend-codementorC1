@@ -1,0 +1,29 @@
+.Message-box {
+
+   
+    transition: 0.3s;
+    display: none;
+}
+
+.Message-container h1 {
+    margin-left: 1rem;
+    color: #FBFCFC;
+}
+
+.Message-container p {
+    margin-left: 1rem;
+    color: #FBFCFC;
+}
+.visibleposition{
+    position: absolute;
+    transition: 0.3s ;
+    background-color: #040F0F;
+    justify-self: center;
+    border-radius: 0.3rem;
+    top: -50px;
+    padding: 1rem; 
+    width: auto;
+    height: 15vh;
+    top: 10px;
+
+}

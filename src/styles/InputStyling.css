@@ -1,3 +1,7 @@
+:root{
+  --invalid:    border: 1.9px solid hsl(0, 100%, 60%);
+  --valid: border: 1.9px solid hsl(120, 100%, 40%); 
+}
 input{
 width: 20vw;
 height: 5vh;
@@ -33,22 +37,19 @@ input:focus{
     width:30px;
     height: 20px;
 }
-.Email-input:invalid:focus {
-    border: 1.9px solid hsl(0, 100%, 60%);
-  }  
-  .Email-input:valid {
+  .Email-input:focus {
     border: 1.9px solid hsl(120, 100%, 40%); 
   }
   input:invalid:focus{
     border: 1.9px solid hsl(120, 100%, 40%); 
     }
-    .input:valid {
+    .input:focus {
       border: 1.9px solid hsl(120, 100%, 40%); 
     }
     .radio:active{
         border: 1.9px solid hsl(120, 100%, 40%); 
         }
-        .Message-input:invalid:focus{
+        .Message-input:focus{
           border: none;
           outline: none;
             border: 1.9px solid hsl(120, 100%, 40%); 
@@ -59,7 +60,7 @@ input:focus{
      .Message-input:hover{
       border: 1.9px solid hsl(120, 100%, 40%); 
      }
-  .Message-input:valid {
+  .Message-input:focus {
     border: 1.9px solid hsl(120, 100%, 40%); 
   }   
 .Check-box:checked{
@@ -78,7 +79,7 @@ input:focus{
     border: 1.9px solid hsl(120, 100%, 40%);
   }
 
-@media(max-width:500px){
+@media(max-width:600px){
     input{
         width: 70vw;
         height: 5vh;
